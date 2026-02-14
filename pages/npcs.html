@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" data-auto-title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NPC Directory</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  <script defer src="../assets/app.js"></script>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+      <div class="brand">
+        <h1 data-world-name>Lithgren</h1>
+        <p class="sub"><strong data-arc-title>Siege on Ilium</strong> • <span data-campaign-internal>Campaign 1</span> • Player Codex</p>
+      </div>
+
+      <nav class="nav">
+        <a href="../index.html">Home</a>
+        <a href="../pages/world-overview.html">World Overview</a>
+        <a href="../pages/map.html">Map</a>
+        <a href="../pages/regions.html">Regions & Settlements</a>
+        <a href="../pages/factions.html">Factions</a>
+        <a href="../pages/pantheon.html">Pantheon</a>
+        <a href="../pages/timeline.html">Timeline</a>
+        <a href="../pages/rules.html">House Rules</a>
+        <a href="../pages/recaps.html">Session Recaps</a>
+        <a class="active" href="../pages/npcs.html">NPC Directory</a>
+        <a href="../pages/handouts.html">Handouts</a>
+        <a href="../pages/bestiary.html">Bestiary (Player-safe)</a>
+        <a href="../pages/items.html">Items & Loot (Player-safe)</a>
+        <a href="../pages/calendar.html">Calendar & Holidays</a>
+      </nav>
+
+      <div class="meta">
+        <div><strong>Tip:</strong> Use spoiler toggles responsibly.</div>
+        <div style="margin-top:6px;">
+          <span class="kicker"><span class="dot"></span> Player-safe by default</span>
+        </div>
+      </div>
+
+      <div class="footer-note">
+        DM note: a DM-only page exists but is not linked.
+      </div>
+    </aside>
+  <main class="main">
+    <div class="page">
+      <section class="paper">
+        <div class="inner">
+          <h2>NPC Directory</h2>
+
+          <div class="row" style="margin:10px 0 6px;">
+            <input data-npc-search type="search" placeholder="Search NPCs by name, faction, location..." />
+          </div>
+          <small class="hint">Search is local to this page (no backend).</small>
+
+          <div class="grid" style="margin-top:12px;">
+            <div class="card" data-npc-card data-search="Maris Vell lighthouse keeper coast emerald guild">
+              <span class="badge">Coast • Friendly</span>
+              <h3>Maris Vell</h3>
+              <p><strong>Role:</strong> Lighthouse Keeper</p>
+              <p><strong>Notes:</strong> Speaks in riddles. Smells faintly of sea-ink.</p>
+              <details class="spoiler">
+                <summary>Reveal: Extra info (optional)</summary>
+                <div class="content">
+                  <p>Put “earned” details here.</p>
+                </div>
+              </details>
+            </div>
+
+            <div class="card" data-npc-card data-search="Brother Caldrin temple cleric crimson vow city">
+              <span class="badge">City • Neutral</span>
+              <h3>Brother Caldrin</h3>
+              <p><strong>Role:</strong> Archivist-Cleric</p>
+              <p><strong>Notes:</strong> Trades favors for forbidden footnotes.</p>
+            </div>
+
+            <div class="card" data-npc-card data-search="Sable Nine mercenary captain faction borderlands">
+              <span class="badge">Borderlands • Dangerous</span>
+              <h3>Sable Nine</h3>
+              <p><strong>Role:</strong> Mercenary Captain</p>
+              <p><strong>Notes:</strong> Always counts the exits. Twice.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>
